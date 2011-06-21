@@ -82,3 +82,4 @@
 (setf (get-dollar-value *obj* 'a) 3)
 (is (get-dollar-value *obj* 'a) 3)
 
+
