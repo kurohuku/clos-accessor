@@ -17,7 +17,7 @@
 
 
 (asdf:defsystem clos-accessor-test
-    :depends-on (:clos-accesor)
+    :depends-on (:clos-accesor :cl-test-more)
     :components
     ((:module "test"
 	      :components

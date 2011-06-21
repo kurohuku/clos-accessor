@@ -9,4 +9,13 @@
 	   with-accessor-symbol
 	   defmethod*))
 
+(defpackage clos-accessor-test.accessor
+  (:use cl clos-accessor cl-test-more))
 
+
+(defpackage clos-accessor-test.accessor-symbol
+  (:use cl clos-accessor cl-test-more))
+
+(defpackage clos-accessor-test.defmethod
+  (:use cl clos-accessor cl-test-more))
+  
