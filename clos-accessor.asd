@@ -1,6 +1,8 @@
 ;;;; -*- mode: lisp; syntax: common-lisp; coding:utf-8 -*-
 
 (require 'asdf)
+(asdf:load-system :cl-test-more)
+(asdf:load-system :alexandria)
 
 (asdf:defsystem clos-accessor
   :description "CLOS accessor methods"
@@ -17,10 +19,10 @@
 
 
 (asdf:defsystem clos-accessor-test
-    :depends-on (:clos-accesor :cl-test-more)
+    :depends-on (:clos-accessor :cl-test-more)
     :components
     ((:module "test"
 	      :components
-	      ((:file "test-accessor")
-	       (:file "test-accessor-symbol")))))
+	      ((:file "clos-accessor-test.accessor")
+	       (:file "clos-accessor-test.accessor-symbol")))))
 

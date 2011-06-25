@@ -6,8 +6,7 @@
 	   set-dot-value
 	   get-dollar-value
 	   set-dollar-value
-	   with-accessor-symbol
-	   defmethod*))
+	   with-accessor-symbol))
 
 (defpackage clos-accessor-test.accessor
   (:use cl clos-accessor cl-test-more))
@@ -15,7 +14,3 @@
 
 (defpackage clos-accessor-test.accessor-symbol
   (:use cl clos-accessor cl-test-more))
-
-(defpackage clos-accessor-test.defmethod
-  (:use cl clos-accessor cl-test-more))
-  
